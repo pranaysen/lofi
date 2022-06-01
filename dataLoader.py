@@ -25,6 +25,8 @@ def main():
 
 def extractData(tracks):
     for track in tracks["items"]:
+        image_url = track['track']['album']['images'][0]['url']
+        track_name = track['track']['name']
         finalList.append(track['track']['name'])
 
 
